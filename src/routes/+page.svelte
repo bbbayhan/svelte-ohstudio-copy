@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Home from '../components/home.svelte';
+	import Tabs from '../components/tabs.svelte';
 
 	let selectedTab = $state('0');
 	function selectTab(id: string) {
@@ -9,21 +10,7 @@
 </script>
 
 <div class="flex flex-col items-center">
-	<div class="mt-8 flex justify-around rounded-full bg-gray-200 px-1 py-1">
-		<button
-			class={`px-8 py-4 ${selectedTab === '0' ? 'bg-white' : ''} rounded-full`}
-			onclick={() => selectTab('0')}>Home</button
-		>
-		<button
-			class={`px-8 py-4 ${selectedTab === '1' ? 'bg-white' : ''} rounded-full`}
-			onclick={() => selectTab('1')}>Profile</button
-		>
-		<button
-			class={`px-8 py-4 ${selectedTab === '2' ? 'bg-white' : ''} rounded-full`}
-			onclick={() => selectTab('2')}>Contact</button
-		>
-	</div>
-
+	<Tabs {selectedTab} {selectTab} />
 	<div class="mt-16">
 		{#if selectedTab === '0'}
 			<Home />
