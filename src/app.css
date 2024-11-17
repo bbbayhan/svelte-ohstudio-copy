@@ -2,15 +2,24 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body {
+	color: #222;
+}
+
 .home_title {
 	animation: reveal 1s linear;
 }
-img {
+
+img.profile {
 	animation: reveal 1.3s linear;
 	transition: filter 0.2s;
 }
-img:hover {
+img.profile:hover {
 	filter: blur(5px);
+}
+.icon {
+	width: 40px;
+	height: 40px;
 }
 
 @keyframes reveal {
