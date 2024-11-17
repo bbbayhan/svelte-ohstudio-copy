@@ -9,9 +9,9 @@
 	}
 </script>
 
-<div class="flex flex-col items-center">
+<div class="relative flex flex-col items-center">
 	<Tabs {selectedTab} {selectTab} />
-	<div class="mt-16">
+	<div class="mt-48">
 		{#if selectedTab === '0'}
 			<Home />
 		{/if}

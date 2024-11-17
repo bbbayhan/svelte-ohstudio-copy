@@ -1,3 +1,25 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.home_title {
+	animation: reveal 1s linear;
+}
+img {
+	animation: reveal 1.3s linear;
+	transition: filter 0.2s;
+}
+img:hover {
+	filter: blur(5px);
+}
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+		transform: translateY(200px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
