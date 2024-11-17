@@ -1,4 +1,5 @@
 <script>
+	import CategoryTabs from './categoryTabs.svelte';
 	import CompanyInfo from './companyInfo.svelte';
 	import Experience from './experience.svelte';
 </script>
@@ -6,11 +7,12 @@
 <section class="home_title">
 	<h1 class="mx-72 text-center text-7xl">Hey 👋🏼 I'm Beste</h1>
 </section>
+<CategoryTabs />
 <section class="mx-12 my-32 grid grid-cols-2 gap-4">
 	<img class="profile h-96 w-full rounded-xl object-cover" alt="coffee" src="./img1.jpg" />
 	<img class="profile h-96 w-full rounded-xl object-cover" alt="flower" src="./img2.jpg" />
 </section>
-<section class="mx-12 my-16 flex flex-col gap-4">
+<section id="about" class="mx-12 my-16 flex flex-col gap-4">
 	<h2 class="mx-72 mb-8 text-center text-5xl">About</h2>
 	<p class="mx-72 text-center text-2xl font-light">
 		Frontend developer with over 5 years of experience. Passionate about writing articles,
@@ -19,7 +21,7 @@
 </section>
 <Experience />
 
-<section class="mx-72 my-16 flex flex-col gap-4">
+<section id="education" class="mx-72 my-16 flex flex-col gap-4">
 	<h2 class="mx-72 mb-8 text-center text-5xl">Education</h2>
 	<CompanyInfo
 		name="Istanbul Technical University"
@@ -35,7 +37,7 @@
 	/>
 </section>
 
-<section class="mx-72 my-16 flex flex-col gap-4">
+<section id="projects" class="mx-72 my-16 flex flex-col gap-4">
 	<h2 class="mx-36 mb-8 text-center text-5xl">Projects and Articles</h2>
 	<CompanyInfo
 		name="Istanbul Technical University"

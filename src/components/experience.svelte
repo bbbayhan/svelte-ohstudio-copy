@@ -9,7 +9,7 @@
 	import ExperienceList from './experienceList.svelte';
 </script>
 
-<section class="mx-72 my-16 flex flex-col gap-4">
+<section id="experience" class="mx-72 my-16 flex flex-col gap-4">
 	<h2 class="mx-72 mb-8 text-center text-5xl">Experience</h2>
 	<CompanyInfo
 		name="Apiumhub"
