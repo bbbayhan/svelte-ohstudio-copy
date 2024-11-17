@@ -1,5 +1,7 @@
 <script lang="ts">
+	import Contact from '../components/contact.svelte';
 	import Home from '../components/home.svelte';
+	import Profile from '../components/profile.svelte';
 	import Tabs from '../components/tabs.svelte';
 
 	let selectedTab = $state('0');
@@ -18,9 +20,9 @@
 			<Home />
 		{/if}
 		{#if selectedTab === '1'}
-			<div>ProfileContent</div>{/if}
+			<Profile />{/if}
 		{#if selectedTab === '2'}
-			<div>ContactContent</div>{/if}
+			<Contact />{/if}
 	</div>
 </main>
 <footer class="mb-8 flex justify-between px-8">
