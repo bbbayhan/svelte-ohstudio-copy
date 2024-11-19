@@ -4,9 +4,20 @@
 
 body {
 	color: #222;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .home_title {
+	animation: reveal 1s linear;
+}
+
+.about {
+	animation: reveal 1s linear;
+}
+
+.navigationTabs {
 	animation: reveal 1s linear;
 }
 
@@ -17,9 +28,13 @@ img.profile {
 img.profile:hover {
 	filter: blur(5px);
 }
-.icon {
-	width: 40px;
-	height: 40px;
+
+.copy_message {
+	position: absolute;
+	margin-top: 30px;
+	color: #222;
+	font-size: 1rem;
+	visibility: hidden;
 }
 
 @keyframes reveal {

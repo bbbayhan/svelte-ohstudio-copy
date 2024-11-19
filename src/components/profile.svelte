@@ -1,48 +1,26 @@
 <script>
+	import { copyToClipboard } from '../utils';
+	import About from './about.svelte';
 	import CategoryTabs from './categoryTabs.svelte';
-	import CompanyInfo from './companyInfo.svelte';
+	import Education from './education.svelte';
 	import Experience from './experience.svelte';
 </script>
 
-<section class="home_title">
-	<h1 class="mx-72 text-center text-7xl">Hey 👋🏼 I'm Beste</h1>
-</section>
+<h1 class="home_title mx-72 text-center text-7xl">Hey 👋🏼 I'm Beste</h1>
 <CategoryTabs />
-<section class="mx-12 my-32 grid grid-cols-2 gap-4">
-	<img class="profile h-96 w-full rounded-xl object-cover" alt="coffee" src="./img1.jpg" />
-	<img class="profile h-96 w-full rounded-xl object-cover" alt="flower" src="./img2.jpg" />
-</section>
-<section id="about" class="mx-12 my-16 flex flex-col gap-4">
-	<h2 class="mx-72 mb-8 text-center text-5xl">About</h2>
-	<p class="mx-72 text-center text-2xl font-light">
-		Frontend developer with over 5 years of experience. Passionate about writing articles,
-		participating in hackathons and conferences, and continuous learning.
-	</p>
-</section>
+<div class="navigationTabs mt-12 flex justify-center gap-4">
+	<a class="underline hover:text-gray-400" href="https://github.com/bbbayhan" target="_blank"
+		>Github</a
+	>
+	<a
+		class="underline hover:text-gray-400"
+		href="https://www.linkedin.com/in/beste-burcu-bayhan/"
+		target="_blank">Linkedin</a
+	>
+	<button class="underline hover:text-gray-400" on:click={copyToClipboard}>Mail</button>
+	<span id="copyMessage" class="copy_message">Email copied to clipboard!</span>
+</div>
+
+<About />
 <Experience />
-
-<section id="education" class="mx-72 my-16 flex flex-col gap-4">
-	<h2 class="mx-72 mb-8 text-center text-5xl">Education</h2>
-	<CompanyInfo
-		name="Istanbul Technical University"
-		location=", Turkey / Bachelor's Degree Computer Science"
-		date="2012-2018"
-		iconUrl="./apium_hub_logo.webp"
-	/>
-	<CompanyInfo
-		name="Universitat Politècnica de València "
-		location=", Spain / Master's Degree Visual Arts and Multimedia"
-		date="2018-2021"
-		iconUrl="./apium_hub_logo.webp"
-	/>
-</section>
-
-<section id="projects" class="mx-72 my-16 flex flex-col gap-4">
-	<h2 class="mx-36 mb-8 text-center text-5xl">Projects and Articles</h2>
-	<CompanyInfo
-		name="Istanbul Technical University"
-		location=", Turkey / Bachelor's Degree Computer Science"
-		date="2012-2018"
-		iconUrl="./apium_hub_logo.webp"
-	/>
-</section>
+<Education />
