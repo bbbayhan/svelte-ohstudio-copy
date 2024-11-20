@@ -6,7 +6,7 @@
 	import Experience from './experience.svelte';
 </script>
 
-<h1 class="home_title mx-72 text-center text-7xl">Hey 👋🏼 I'm Beste</h1>
+<h1 class="home_title mx-auto text-center text-3xl md:text-7xl">Hey 👋🏼 I'm Beste</h1>
 <CategoryTabs />
 <div class="navigationTabs mt-12 flex justify-center gap-4">
 	<a class="underline hover:text-gray-400" href="https://github.com/bbbayhan" target="_blank"

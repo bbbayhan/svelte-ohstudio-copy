@@ -1,10 +1,12 @@
-<section class="mx-48 my-24 flex justify-around px-48">
+<section
+	class="mx-auto my-24 flex flex-col items-center px-96 md:flex-row md:justify-around md:px-48"
+>
 	<a href="https://www.youtube.com/watch?v=W228OS-cvx8&ab_channel=WomenWhoCode" target="_blank"
-		><img class="profile w-2/3 rounded-xl" alt="presentation" src="./beste-profile.webp" />
+		><img class="profile w-1/3 rounded-xl md:w-2/3" alt="presentation" src="./beste-profile.webp" />
 	</a>
-	<div id="about" class="about flex flex-col justify-center gap-2">
-		<h2 class="text-center text-3xl">About</h2>
-		<p class="text-center text-lg font-normal">
+	<div id="about" class="about w-1/3 md:w-full md:gap-2">
+		<h2 class="text-center text-sm md:text-3xl">About</h2>
+		<p class="text-center text-sm font-normal md:text-lg">
 			Frontend developer with over 5 years of experience. Passionate about <a
 				href="https://apiumhub.com/author/beste/"
 				target="_blank"><strong class="underline">writing articles,</strong></a
