@@ -1,6 +1,6 @@
 # sv
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This project is done to put my experience and curriculum.
 
 ## Developing
 
