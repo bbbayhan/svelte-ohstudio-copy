@@ -20,8 +20,9 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
+
 		paths: {
-			base: '/svelte-ohstudio-copy'
+			base: process.env.NODE_ENV === 'production' ? '/svelte-ohstudio-copy' : ''
 		}
 	}
 };
