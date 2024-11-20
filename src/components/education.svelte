@@ -2,8 +2,8 @@
 	import CompanyInfo from './companyInfo.svelte';
 </script>
 
-<section id="education" class="mx-72 my-16 flex flex-col gap-4 px-48">
-	<h2 class="mx-72 mb-8 text-center text-5xl">Education</h2>
+<section id="education" class="mx-auto my-16 flex flex-col gap-4 md:px-48">
+	<h2 class="text-center text-sm font-bold md:text-5xl md:font-normal">Education</h2>
 	<CompanyInfo
 		name="Universitat Politècnica de València "
 		location=", Spain / Master's Degree Visual Arts and Multimedia"
