@@ -2,8 +2,7 @@
 	import { copyToClipboard } from '../utils';
 </script>
 
-<footer class="mb-4 mt-auto flex justify-between md:mb-8 md:px-16">
-	© Oli Harris 2023
+<footer class="mb-4 mt-auto justify-items-end md:mb-8 md:px-16">
 	<nav class="text-sm">
 		<a class="underline hover:text-gray-400" href="https://github.com/bbbayhan" target="_blank"
 			>Github</a
