@@ -1,5 +1,5 @@
 <script>
-	import { copyToClipboard } from '../utils';
+	import { copyToClipboard } from '../../utils';
 	import About from './about.svelte';
 	import Education from './education.svelte';
 	import Experience from './experience.svelte';

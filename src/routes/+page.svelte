@@ -1,7 +1,7 @@
 <script lang="ts">
-	import CategoryTabs from '../components/categoryTabs.svelte';
-	import Footer from '../components/footer.svelte';
-	import Profile from '../components/profile.svelte';
+	import CategoryTabs from '../presentation/components/categoryTabs.svelte';
+	import Footer from '../presentation/components/footer.svelte';
+	import Profile from '../presentation/components/profile.svelte';
 </script>
 
 <header class="flex justify-center">

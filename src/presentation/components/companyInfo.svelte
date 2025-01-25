@@ -2,7 +2,8 @@
 	export let name,
 		date,
 		location,
-		iconUrl = '';
+		iconUrl = '',
+		experiences = [];
 </script>
 
 <div
@@ -13,4 +14,10 @@
 		<strong class="ml-2">{name}</strong><span>{location}</span>
 	</div>
 	<span class="font-light text-gray-400">{date}</span>
+
+	<ul class="my-6 list-inside list-disc space-y-2">
+		{#each experiences as item}
+			<li class="text-sm font-light md:text-lg">{item}</li>
+		{/each}
+	</ul>
 </div>

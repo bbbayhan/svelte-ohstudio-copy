@@ -1,5 +1,5 @@
 <script>
-	import { copyToClipboard } from '../utils';
+	import { copyToClipboard } from '../../utils';
 </script>
 
 <footer class="mb-4 mt-auto justify-items-end md:mb-8 md:px-16">
