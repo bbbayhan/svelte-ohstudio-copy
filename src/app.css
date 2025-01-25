@@ -25,9 +25,6 @@ img.profile {
 	animation: reveal 1.3s linear;
 	transition: filter 0.2s;
 }
-img.profile:hover {
-	filter: blur(5px);
-}
 
 .copy_message {
 	position: absolute;

@@ -8,8 +8,4 @@
 		class={`px-8 py-4 ${selectedTab === '0' ? 'bg-white' : ''} rounded-full`}
 		on:click={() => selectTab('0')}>Profile</button
 	>
-	<button
-		class={`px-8 py-4 ${selectedTab === '1' ? 'bg-white' : ''} rounded-full`}
-		on:click={() => selectTab('1')}>CV</button
-	>
 </div>
